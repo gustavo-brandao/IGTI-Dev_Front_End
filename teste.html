@@ -7,11 +7,17 @@
     <title>Document</title>
     <style>
         div{
+            /*define borda e margem para toda a div*/
             border: 2px solid grey;
             margin: 5px;
         }
         .c1 div{
-            border-style: dashed;
+            /* div's descendentes de c1 vão ter um estilo de borda tracejado*/
+            border-style: dashed;            
+        }
+        .c1 > div{
+            /*div's que são filhos diretos de elementos do pacote c1 vão ter a cor da borda vermelha*/
+            border-color: red;
         }
     </style>
 </head>
